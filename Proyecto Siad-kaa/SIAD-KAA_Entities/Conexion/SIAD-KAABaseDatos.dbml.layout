@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.625, 27.125" name="SIAD-KAABaseDatos">
+  <DataContextMoniker Name="/SIAD_KAABaseDatosDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a792446-665c-4adb-bc9c-8d32d2d31d3a" absoluteBounds="9, 14.75, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_DETALLE_PEDIDO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="acdf2917-2937-4d50-9312-3bf7e7d57c7e" absoluteBounds="9.015, 15.21, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="87afa78c-3b62-4ea7-8c49-8f2aacecead7" absoluteBounds="6.25, 9.75, 2, 3.6939111328124987">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_MENUS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d24c9c77-ed8e-4fe1-b017-6117e8431481" absoluteBounds="6.265, 10.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b8358d4f-5385-4368-8987-88d15b01a9f6" absoluteBounds="3.5, 17, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_MESAS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05438f0a-c24c-46b6-a7ed-b472eebaa5b4" absoluteBounds="3.515, 17.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fa6ac96-f52b-4a15-8c38-939e5c431b3a" absoluteBounds="3.5, 24, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PAGINAS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ddbfb9d4-87a2-48d0-b976-0879a4347cc1" absoluteBounds="3.515, 24.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15afabf4-b6f1-4c91-a271-71493d19aae4" absoluteBounds="9.25, 19.125, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PAGINAS_POR_ROL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8369f843-159f-4bb1-9e63-7f8044b44cbc" absoluteBounds="9.265, 19.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6bfdff18-7531-485d-80f1-be8f2a451c53" absoluteBounds="3.5, 7.125, 2, 2.5401025390624996">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PARAMETROS_GENERALES" />
+      <nestedChildShapes>
+        <elementListCompartment Id="94b539ea-a6d4-425e-9808-01af902d1d70" absoluteBounds="3.515, 7.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="973ffb38-d402-4613-ae8f-a1ee8ec378b5" absoluteBounds="6.25, 19.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PEDIDOS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4ee15d2a-c9c0-4ff1-bb82-912eb5a4a607" absoluteBounds="6.265, 19.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="05f70a1a-8e72-4d27-9f92-b8d26f49627d" absoluteBounds="3.5, 10.375, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PORCIONES" />
+      <nestedChildShapes>
+        <elementListCompartment Id="04c82224-f09a-4120-90fc-b460a9e049f6" absoluteBounds="3.515, 10.835, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" absoluteBounds="0.75, 15.25, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45e4f6f9-cc36-4867-b05f-4c3581b54105" absoluteBounds="0.765, 15.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cde8945-7767-4e29-9c67-06cb419ef1b4" absoluteBounds="3.5, 13.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_ROLES" />
+      <nestedChildShapes>
+        <elementListCompartment Id="21517928-6a20-4a61-8eda-2f33e427707a" absoluteBounds="3.515, 14.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="91bb89a5-e350-41eb-a23b-e07ec26b375c" absoluteBounds="3.5, 20.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_TIPO_MENU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="223ab35f-415d-49a7-bff1-033015acb0bb" absoluteBounds="3.515, 20.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5bf1d8e4-20ef-43aa-b3f6-f631652128a9" absoluteBounds="6.25, 14.5, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_USUARIOS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de131ace-c0bb-49d7-b3c5-ffdc383bd4a2" absoluteBounds="6.265, 14.96, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.25 : 11.5969555664062); (10 : 11.5969555664062); (10 : 14.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_MENUS/SIAD_MENUS_SIAD_DETALLE_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="87afa78c-3b62-4ea7-8c49-8f2aacecead7" />
+        <classShapeMoniker Id="3a792446-665c-4adb-bc9c-8d32d2d31d3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 25.4623527018229); (10.25 : 25.4623527018229); (10.25 : 21.4728011067708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PAGINAS/SIAD_PAGINAS_SIAD_PAGINAS_POR_ROL" />
+      <nodes>
+        <classShapeMoniker Id="2fa6ac96-f52b-4a15-8c38-939e5c431b3a" />
+        <classShapeMoniker Id="15afabf4-b6f1-4c91-a271-71493d19aae4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 21.6963525390625); (9.09375 : 21.6963525390625); (9.09375 : 18.2516097005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PEDIDOS/SIAD_PEDIDOS_SIAD_DETALLE_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="973ffb38-d402-4613-ae8f-a1ee8ec378b5" />
+        <classShapeMoniker Id="3a792446-665c-4adb-bc9c-8d32d2d31d3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 19.4287019856771); (6.25 : 19.4287019856771)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_MESAS/SIAD_MESAS_SIAD_PEDIDOS" />
+      <nodes>
+        <classShapeMoniker Id="b8358d4f-5385-4368-8987-88d15b01a9f6" />
+        <classShapeMoniker Id="973ffb38-d402-4613-ae8f-a1ee8ec378b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.6450512695312); (6.25 : 11.6450512695312)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_PORCIONES/SIAD_PORCIONES_SIAD_MENUS" />
+      <nodes>
+        <classShapeMoniker Id="05f70a1a-8e72-4d27-9f92-b8d26f49627d" />
+        <classShapeMoniker Id="87afa78c-3b62-4ea7-8c49-8f2aacecead7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 17.0008048502604); (3.25 : 17.0008048502604); (3.25 : 16.75); (6 : 16.75); (6 : 14.25); (9.468748 : 14.25); (9.468748 : 14.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_DETALLE_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="3a792446-665c-4adb-bc9c-8d32d2d31d3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 15.25); (1.75 : 10.03125); (2.19791916666667 : 10.03125 : JumpStart); (2.36458583333333 : 10.03125 : JumpEnd); (6.25 : 10.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_MENUS" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="87afa78c-3b62-4ea7-8c49-8f2aacecead7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 17.9387072753906); (3.5 : 17.9387072753906)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_MESAS" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="b8358d4f-5385-4368-8987-88d15b01a9f6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 18.7516097005208); (1.75 : 25.4623527018229); (3.5 : 25.4623527018229)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_PAGINAS" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="2fa6ac96-f52b-4a15-8c38-939e5c431b3a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 15.25); (2.2812525 : 8.39505126953125); (3.5 : 8.39505126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_PARAMETROS_GENERALES" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="6bfdff18-7531-485d-80f1-be8f2a451c53" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 18.7516097005208); (2.2812525 : 20.1162019856771); (6.25 : 20.1162019856771)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_PEDIDOS" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="973ffb38-d402-4613-ae8f-a1ee8ec378b5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 15.25); (1.2187475 : 11.6450512695312); (1.66666666666667 : 11.6450512695312 : JumpStart); (1.83333333333333 : 11.6450512695312 : JumpEnd); (2.19791916666667 : 11.6450512695312 : JumpStart); (2.36458583333333 : 11.6450512695312 : JumpEnd); (3.5 : 11.6450512695312)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_PORCIONES" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="05f70a1a-8e72-4d27-9f92-b8d26f49627d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14); (9.91666666666667 : 14 : JumpStart); (10.0833333333333 : 14 : JumpEnd); (11.15625 : 14); (11.15625 : 19.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_ROLES/SIAD_ROLES_SIAD_PAGINAS_POR_ROL" />
+      <nodes>
+        <classShapeMoniker Id="8cde8945-7767-4e29-9c67-06cb419ef1b4" />
+        <classShapeMoniker Id="15afabf4-b6f1-4c91-a271-71493d19aae4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.7700512695313); (3.5 : 15.7700512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_ROLES" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="8cde8945-7767-4e29-9c67-06cb419ef1b4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 18.7516097005208); (1.2187475 : 21.8662019856771); (1.66666666666667 : 21.8662019856771 : JumpStart); (1.83333333333333 : 21.8662019856771 : JumpEnd); (3.5 : 21.8662019856771)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_TIPO_MENU" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="91bb89a5-e350-41eb-a23b-e07ec26b375c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 16.4888012695313); (5.91666666666667 : 16.4888012695313 : JumpStart); (6.08333333333333 : 16.4888012695313 : JumpEnd); (6.25 : 16.4888012695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_RESTAURANTE/SIAD_RESTAURANTE_SIAD_USUARIOS" />
+      <nodes>
+        <classShapeMoniker Id="ec0d3769-8ea6-4da4-a391-52c90f3afc2a" />
+        <classShapeMoniker Id="5bf1d8e4-20ef-43aa-b3f6-f631652128a9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 15.3950512695313); (5.91666666666667 : 15.3950512695313 : JumpStart); (6.08333333333333 : 15.3950512695313 : JumpEnd); (6.25 : 15.3950512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/SIAD_KAABaseDatosDataContext/SIAD_ROLES/SIAD_ROLES_SIAD_USUARIOS" />
+      <nodes>
+        <classShapeMoniker Id="8cde8945-7767-4e29-9c67-06cb419ef1b4" />
+        <classShapeMoniker Id="5bf1d8e4-20ef-43aa-b3f6-f631652128a9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

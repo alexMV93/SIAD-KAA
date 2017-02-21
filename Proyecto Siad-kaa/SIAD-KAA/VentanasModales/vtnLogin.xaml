@@ -1,0 +1,70 @@
+﻿<Window x:Class="SIAD_KAA.VentanasModales.vtnLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="SIAD-KAA Soluciones" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"  WindowStyle="None" Width="420" Height="370" AllowsTransparency="True">
+    <Grid Background="#FF396876">
+        <Grid Height="360" VerticalAlignment="Center" Margin="0" Background="White" HorizontalAlignment="Center" Width="410">
+            <Grid x:Name="divDatos" Width="350" Margin="30,119,30,14">
+                <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="Black" Foreground="Black" x:Name="txtUsuario" FontSize="16"
+                 Margin="0,4,0,172">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel Orientation="Horizontal" Margin="-2 0 0 0">
+                            <materialDesign:PackIcon Kind="AccountKey" />
+                            <TextBlock FontSize="16">Usuario</TextBlock>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+
+                <TextBox Style="{StaticResource MaterialDesignFloatingHintTextBox}" BorderBrush="Black" Foreground="Black" x:Name="txtContraseña" FontSize="16"
+                 Margin="0,74,0,105">
+                    <materialDesign:HintAssist.Hint>
+                        <StackPanel Orientation="Horizontal" Margin="-2 0 0 0">
+                            <materialDesign:PackIcon Kind="Key" />
+                            <TextBlock FontSize="16">Contraseña</TextBlock>
+                        </StackPanel>
+                    </materialDesign:HintAssist.Hint>
+                </TextBox>
+
+                <Button x:Name="btnCancelar" Click="btnCerrar_Click" Style="{DynamicResource MaterialDesignFlatButton}"
+                        			 Margin="5,0,200,3" Height="32.986" Foreground="#FF165978" VerticalAlignment="Bottom">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Close" Foreground="Red" Width="20" Height="20" />
+                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center" FontSize="18.667"><Run Text="Cancelar"/></TextBlock>
+                    </StackPanel>
+                </Button>
+
+                <Button x:Name="btnIniciarSesion" Click="btnIngresar_Click" Style="{DynamicResource MaterialDesignFlatButton}"
+                        			 Margin="165,0,5,3" Height="32.986" Foreground="#FF165978" VerticalAlignment="Bottom">
+                    <StackPanel Orientation="Horizontal" Width="152.69">
+                        <materialDesign:PackIcon Kind="Login" Foreground="Green"  Width="20" Height="20" />
+                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center" FontSize="18.667"><Run Text="Iniciar Sesión"/></TextBlock>
+                    </StackPanel>
+                </Button>
+
+                <!--<Button x:Name="btnCerrar" Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+                        Margin="55,160,0,11" HorizontalAlignment="Left"
+                        ToolTip="Cerrar" Background="#FFE4401B" RenderTransformOrigin="1.464,1.777" Height="Auto" Click="btnCerrar_Click">
+                    <materialDesign:PackIcon Kind="Close"  Foreground="White" Height="24" Width="24" />
+                </Button>
+                <Button x:Name="btnIngresar" Style="{StaticResource MaterialDesignFloatingActionAccentButton}"
+                        Margin="243,160,0,11" HorizontalAlignment="Left"
+                        ToolTip="Iniciar Sesión" Background="#FF2882C1" Height="Auto" Click="btnIngresar_Click">
+                    <materialDesign:PackIcon Kind="Login" Foreground="White" Height="24" Width="24" />
+                </Button>-->
+
+
+
+            </Grid>
+        </Grid>
+
+
+    </Grid>
+</Window>

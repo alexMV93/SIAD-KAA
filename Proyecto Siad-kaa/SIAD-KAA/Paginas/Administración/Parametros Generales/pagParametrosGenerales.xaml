@@ -1,0 +1,24 @@
+﻿<Page x:Class="SIAD_KAA.Paginas.Administración.Parametros_Generales.pagParametrosGenerales"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1000"
+	Title="pagParametrosGenerales">
+
+    <Grid>
+        <Grid x:Name="grdEncabezado" Height="60" VerticalAlignment="Top">
+            <TextBlock x:Name="txbTitulo" TextWrapping="Wrap" Text="Parametros Generales" VerticalAlignment="Top" FontSize="32" TextAlignment="Center" Margin="0,10,0,0" TextDecorations="{x:Null}" Foreground="#FF3A4447" FontFamily="Segoe UI Semibold"/>
+            <Path Data="M43.283582,83.58209 L791.04478,82.089552" Fill="#FF3A4447" Height="3" Margin="40,55,40,0" Stretch="Fill" Stroke="#FF3A4447" VerticalAlignment="Top" StrokeThickness="2"/>
+        </Grid>
+    </Grid>
+</Page>

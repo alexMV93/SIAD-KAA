@@ -1,0 +1,9 @@
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\bin\Debug\SIAD-KAA_LOGICA.dll
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\bin\Debug\SIAD-KAA_LOGICA.pdb
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\bin\Debug\SIAD-KAA_CONEXION.dll
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\bin\Debug\SIAD-KAA_ENTIDADES.dll
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\bin\Debug\SIAD-KAA_CONEXION.pdb
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\bin\Debug\SIAD-KAA_ENTIDADES.pdb
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\obj\Debug\SIAD-KAA_LOGICA.csprojResolveAssemblyReference.cache
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\obj\Debug\SIAD-KAA_LOGICA.dll
+c:\Users\Alex\documents\visual studio 2013\Projects\SIAD-KAA\SIAD-KAA_LOGICA\obj\Debug\SIAD-KAA_LOGICA.pdb

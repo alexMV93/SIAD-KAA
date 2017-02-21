@@ -1,0 +1,183 @@
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\Estilos\rsEstilos.baml
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.baml
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\App.baml
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.g.cs
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.g.cs
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\App.g.cs
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.cache
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.lref
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe.config
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_CONTROLADOR.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_ENTIDADES.dll
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_CONTROLADOR.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_ENTIDADES.pdb
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.baml
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\Themes\Generic.baml
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.g.resources
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD_KAA.Properties.Resources.resources
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.exe
+C:\Users\Alex\Documents\Visual Studio 2013\Projects\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.pdb
+C:\Users\Alex\Desktop\Nueva carpeta\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe.config
+C:\Users\Alex\Desktop\Nueva carpeta\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.exe
+C:\Users\Alex\Desktop\Nueva carpeta\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe.config
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.dll
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignColors.dll
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Controller.dll
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Entities.dll
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_LOGICA.dll
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Controller.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Entities.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.xml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_LOGICA.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenuMantenimiento.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\App.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenuMantenimiento.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenu.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\App.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.cache
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.lref
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Estilos\rsEstilos.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenu.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Themes\Generic.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.g.resources
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD_KAA.Properties.Resources.resources
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csproj.GenerateResource.Cache
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.exe
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.pdb
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturas\pagFacturas.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Mesas\pagMesas.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Pedidos\PagPedidos.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturas\pagFacturas.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Mesas\pagMesas.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Pedidos\PagPedidos.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Administración\Parametros Generales\pagParametrosGenerales.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Roles\pagRoles.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Usuarios\pagUsuarios.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Administración\Parametros Generales\pagParametrosGenerales.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Roles\pagRoles.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Usuarios\pagUsuarios.g.cs
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturacion\pagFacturacion.baml
+C:\Users\Alex\Desktop\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturacion\pagFacturacion.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe.config
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.exe
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.dll
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignColors.dll
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Controller.dll
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Entities.dll
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_LOGICA.dll
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Controller.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Entities.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.xml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_LOGICA.pdb
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Administración\Parametros Generales\pagParametrosGenerales.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturacion\pagFacturacion.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturas\pagFacturas.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenuMantenimiento.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Mesas\pagMesas.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Pedidos\PagPedidos.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Roles\pagRoles.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Usuarios\pagUsuarios.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\App.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Administración\Parametros Generales\pagParametrosGenerales.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturacion\pagFacturacion.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturas\pagFacturas.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenuMantenimiento.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenu.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Mesas\pagMesas.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Pedidos\PagPedidos.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Roles\pagRoles.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Usuarios\pagUsuarios.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\App.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.cache
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.lref
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Estilos\rsEstilos.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenu.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\Themes\Generic.baml
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.g.resources
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD_KAA.Properties.Resources.resources
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csproj.GenerateResource.Cache
+C:\Users\Alex\Dropbox\SIAD_KAA\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csprojResolveAssemblyReference.cache
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe.config
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.exe
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.pdb
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.exe
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA.pdb
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.dll
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignColors.dll
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.dll
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Controller.dll
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Entities.dll
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_LOGICA.dll
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Controller.pdb
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_Entities.pdb
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.pdb
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\Dragablz.xml
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignColors.pdb
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.pdb
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\MaterialDesignThemes.Wpf.xml
+A:\SIAD-KAA\SIAD-KAA\bin\Debug\SIAD-KAA_LOGICA.pdb
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csprojResolveAssemblyReference.cache
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Administración\Parametros Generales\pagParametrosGenerales.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturacion\pagFacturacion.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturas\pagFacturas.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenuMantenimiento.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Mesas\pagMesas.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Pedidos\PagPedidos.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Roles\pagRoles.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Usuarios\pagUsuarios.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\App.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\MainWindow.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Administración\Parametros Generales\pagParametrosGenerales.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturacion\pagFacturacion.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Facturas\pagFacturas.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenuMantenimiento.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenu.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Mesas\pagMesas.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Pedidos\PagPedidos.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Roles\pagRoles.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Seguridad\Usuarios\pagUsuarios.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\VentanasModales\vtnLogin.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\App.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\GeneratedInternalTypeHelper.g.cs
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.cache
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA_MarkupCompile.lref
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Estilos\rsEstilos.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Paginas\Facturacion\Menu\pagMenu.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\Themes\Generic.baml
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.g.resources
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD_KAA.Properties.Resources.resources
+A:\SIAD-KAA\SIAD-KAA\obj\Debug\SIAD-KAA.csproj.GenerateResource.Cache

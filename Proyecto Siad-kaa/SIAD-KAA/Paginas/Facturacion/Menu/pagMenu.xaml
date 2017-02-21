@@ -1,0 +1,88 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     xmlns:Personalizados="clr-namespace:SIAD_KAA.Controles.Personalizados" x:Class="SIAD_KAA.Paginas.Facturacion.Menu.pagMenu"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1000"
+	Title="pagMenu" >
+    
+    
+    
+	<Grid ScrollViewer.CanContentScroll="True">
+		<Grid x:Name="grdEncabezado" Height="60" VerticalAlignment="Top">
+			<TextBlock x:Name="txbTitulo" TextWrapping="Wrap" Text="Menu" VerticalAlignment="Top" FontSize="32" TextAlignment="Center" Margin="0,10,0,0" TextDecorations="{x:Null}" Foreground="#FF3A4447" FontFamily="Segoe UI Semibold"/>
+			<Path Data="M43.283582,83.58209 L791.04478,82.089552" Fill="#FF3A4447" Height="3" Margin="40,55,40,0" Stretch="Fill" Stroke="#FF3A4447" VerticalAlignment="Top" StrokeThickness="2"/>
+		</Grid>
+		<Grid x:Name="grdCuerpo" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible" Margin="0,65,0,0">
+            <Grid Margin="100,10,100,0" VerticalAlignment="Top" ScrollViewer.CanContentScroll="True" Height="50" Background="#FFE1E5F0">
+                <ComboBox x:Name="cbxTipoMenu" SelectionChanged="cbxTipoMenu_SelectionChanged" DisplayMemberPath="TIM_NOMBRE" SelectedValuePath="PK_TIPO_MENU" Height="45" Width="200" VerticalAlignment="Top" IsEditable="True" FontFamily="Segoe UI" FontSize="16" Foreground="Black" materialDesign:HintAssist.Hint="Tipo de Menú" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="15,0,0,0" HorizontalAlignment="Left">
+
+                </ComboBox>
+                <ComboBox x:Name="cbxMenu" SelectionChanged="cbxMenu_SelectionChanged" DisplayMemberPath="MEN_NOMBRE" SelectedValuePath="MEN_NOMBRE" Height="45" VerticalAlignment="Top" IsEditable="True" FontFamily="Segoe UI" FontSize="16" Foreground="Black" materialDesign:HintAssist.Hint="Nombre del producto" Style="{StaticResource MaterialDesignFloatingHintComboBox}" Margin="244.5,0,0,0" HorizontalAlignment="Left" Width="305"/>
+
+                <Button x:Name="btnAgregar" Click="btnAgregar_Click" Style="{DynamicResource MaterialDesignFlatButton}"
+					Height="40" Foreground="#FF165978" VerticalAlignment="Top" Width="145" HorizontalAlignment="Right" BorderThickness="5" FontFamily="Segoe UI" FontSize="18" Margin="0,5,0,0">
+					<Button.Background>
+						<SolidColorBrush Color="#FF33C333" Opacity="0.95"/>
+					</Button.Background>
+					<StackPanel Orientation="Horizontal" Width="120" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center">
+						<materialDesign:PackIcon Kind="PlusBox" Foreground="White" Width="25" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center" />
+						<TextBlock Margin="8 0 0 0" VerticalAlignment="Center" Foreground="White" FontFamily="Segoe UI" FontSize="18"><Run Text="Agregar"/></TextBlock>
+					</StackPanel>
+				</Button>
+			</Grid>
+			<ScrollViewer Visibility="Visible" x:Name="svrListaProductos" VerticalScrollBarVisibility="Auto" Margin="100,70,100,40" BorderBrush="#FF3C8781" Foreground="{x:Null}" BorderThickness="0" >
+				<WrapPanel x:Name="wrpProductos" Orientation="Horizontal" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" Opacity="0.8" Background="#FFE1E5F0">
+					<!--<materialDesign:Card Visibility="Hidden" Width="207.194" Margin="8 2 6 8" Height="149.329">
+						<Grid VerticalAlignment="Stretch" Margin="0,0,-4,0">
+							<Image x:Name="imgProducto" Source="/SIAD-KAA;component/Imagenes/maxresdefault.jpg" Stretch="Fill" Margin="20,4.465,20,72" />
+							<TextBlock x:Name="txtNombre" TextWrapping="Wrap" Text="Carne en salsa" VerticalAlignment="Bottom" FontFamily="Segoe UI" FontSize="16" TextAlignment="Center" Height="42.72" Margin="10,0,10,28.28" Foreground="Black"/>
+							<TextBlock TextWrapping="Wrap" Text="10000" VerticalAlignment="Bottom" Foreground="White" Background="Green" FontFamily="Segoe UI" FontSize="16" TextAlignment="Center" Margin="5,0,10,5" FontWeight="Bold"/>
+						</Grid>
+					</materialDesign:Card>-->
+					<!--<Personalizados:ccMenu Content="ccMenu"/>
+					<Personalizados:ccMenu Content="ccMenu"/>
+					<Personalizados:ccMenu Content="ccMenu"/>
+					<Personalizados:ccMenu Content="ccMenu"/>
+					<Personalizados:ccMenu Content="ccMenu"/>
+					<Personalizados:ccMenu Content="ccMenu"/>
+					<Personalizados:ccMenu Content="ccMenu"/>
+					<Personalizados:ccMenu Content="ccMenu"/>-->
+
+
+
+
+
+
+
+					
+
+
+
+
+
+
+				</WrapPanel>
+			</ScrollViewer>
+
+            
+
+
+
+
+
+		</Grid>
+		<Frame x:Name="frmNavegadorMenu" Visibility="Hidden" Background="{DynamicResource MaterialDesignPaper}"  NavigationUIVisibility="Hidden" Margin="0,0,0,0"/>
+
+	</Grid>
+</Page>

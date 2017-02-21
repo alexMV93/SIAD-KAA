@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SIAD_KAA" Class="SIAD_KAABaseDatosDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ALEX-PC\SQLEXPRESS2012;Initial Catalog=SIAD_KAA;Persist Security Info=True;User ID=SIAD-KAA" SettingsObjectName="SIAD_KAA_Entities.Properties.Settings" SettingsPropertyName="SIAD_KAAConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SIAD_DETALLE_PEDIDO" Member="SIAD_DETALLE_PEDIDO">
+    <Type Name="SIAD_DETALLE_PEDIDO">
+      <Column Name="PK_DETALLE_PEDIDO" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_PEDIDO" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PK_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CODIGO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_CANTIDAD" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DPE_PRECIO" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="DPE_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_MENUS_SIAD_DETALLE_PEDIDO" Member="SIAD_MENUS" ThisKey="PK_MENU,MEN_CODIGO" OtherKey="PK_MENU,MEN_CODIGO" Type="SIAD_MENUS" IsForeignKey="true" />
+      <Association Name="SIAD_PEDIDOS_SIAD_DETALLE_PEDIDO" Member="SIAD_PEDIDOS" ThisKey="PK_PEDIDO" OtherKey="PK_PEDIDO" Type="SIAD_PEDIDOS" IsForeignKey="true" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_DETALLE_PEDIDO" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_MENUS" Member="SIAD_MENUS">
+    <Type Name="SIAD_MENUS">
+      <Column Name="PK_MENU" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_PORCION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_TIPO_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CODIGO" Type="System.String" DbType="VarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MEN_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_IMAGEN" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="MEN_PRECIO" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_MENUS_SIAD_DETALLE_PEDIDO" Member="SIAD_DETALLE_PEDIDO" ThisKey="PK_MENU,MEN_CODIGO" OtherKey="PK_MENU,MEN_CODIGO" Type="SIAD_DETALLE_PEDIDO" />
+      <Association Name="SIAD_PORCIONES_SIAD_MENUS" Member="SIAD_PORCIONES" ThisKey="PK_PORCION,PK_RESTAURANTE" OtherKey="PK_PORCION,PK_RESTAURANTE" Type="SIAD_PORCIONES" IsForeignKey="true" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_MENUS" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_MESAS" Member="SIAD_MESAS">
+    <Type Name="SIAD_MESAS">
+      <Column Name="PK_MESA" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MES_NUMERO" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MES_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_ESTADO_ACTUAL" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MES_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_MESAS_SIAD_PEDIDOS" Member="SIAD_PEDIDOS" ThisKey="PK_MESA" OtherKey="PK_MESA" Type="SIAD_PEDIDOS" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_MESAS" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_PAGINAS" Member="SIAD_PAGINAS">
+    <Type Name="SIAD_PAGINAS">
+      <Column Name="PK_PAGINA" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PAG_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_RUTA" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_ICONO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_TIPO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_PAGINAS_SIAD_PAGINAS_POR_ROL" Member="SIAD_PAGINAS_POR_ROL" ThisKey="PK_PAGINA,PK_RESTAURANTE" OtherKey="PK_PAGINA,PK_RESTAURANTE" Type="SIAD_PAGINAS_POR_ROL" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PAGINAS" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_PAGINAS_POR_ROL" Member="SIAD_PAGINAS_POR_ROL">
+    <Type Name="SIAD_PAGINAS_POR_ROL">
+      <Column Name="PK_PAGINA_POR_ROL" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_ROL" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PK_PAGINA" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PPR_INGRESO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PPR_CREACION" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PPR_MODIFICACION" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PPR_ELIMINACION" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_PAGINAS_SIAD_PAGINAS_POR_ROL" Member="SIAD_PAGINAS" ThisKey="PK_PAGINA,PK_RESTAURANTE" OtherKey="PK_PAGINA,PK_RESTAURANTE" Type="SIAD_PAGINAS" IsForeignKey="true" />
+      <Association Name="SIAD_ROLES_SIAD_PAGINAS_POR_ROL" Member="SIAD_ROLES" ThisKey="PK_ROL,PK_RESTAURANTE" OtherKey="PK_ROL,PK_RESTAURANTE" Type="SIAD_ROLES" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_PARAMETROS_GENERALES" Member="SIAD_PARAMETROS_GENERALES">
+    <Type Name="SIAD_PARAMETROS_GENERALES">
+      <Column Name="PK_PARAMETRO_GENERAL" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PARAMETROS_GENERALES" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_PEDIDOS" Member="SIAD_PEDIDOS">
+    <Type Name="SIAD_PEDIDOS">
+      <Column Name="PK_PEDIDO" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_MESA" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PED_FECHA" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PED_TOTAL" Type="System.Decimal" DbType="Decimal(15,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PED_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PED_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PED_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PED_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PED_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_PEDIDOS_SIAD_DETALLE_PEDIDO" Member="SIAD_DETALLE_PEDIDO" ThisKey="PK_PEDIDO" OtherKey="PK_PEDIDO" Type="SIAD_DETALLE_PEDIDO" />
+      <Association Name="SIAD_MESAS_SIAD_PEDIDOS" Member="SIAD_MESAS" ThisKey="PK_MESA" OtherKey="PK_MESA" Type="SIAD_MESAS" IsForeignKey="true" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PEDIDOS" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_PORCIONES" Member="SIAD_PORCIONES">
+    <Type Name="SIAD_PORCIONES">
+      <Column Name="PK_PORCION" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="POR_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="POR_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_PORCIONES_SIAD_MENUS" Member="SIAD_MENUS" ThisKey="PK_PORCION,PK_RESTAURANTE" OtherKey="PK_PORCION,PK_RESTAURANTE" Type="SIAD_MENUS" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PORCIONES" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_RESTAURANTE" Member="SIAD_RESTAURANTE">
+    <Type Name="SIAD_RESTAURANTE">
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RES_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_LOGO" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="RES_TELEFONO_UNO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_TELEFONO_DOS" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CEDULA_JURIDICA" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CORREO_ELECTRONICO" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_DIRECCION" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CODIGO_MENU" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="RES_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_DETALLE_PEDIDO" Member="SIAD_DETALLE_PEDIDO" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_DETALLE_PEDIDO" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_MENUS" Member="SIAD_MENUS" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_MENUS" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_MESAS" Member="SIAD_MESAS" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_MESAS" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PAGINAS" Member="SIAD_PAGINAS" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_PAGINAS" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PARAMETROS_GENERALES" Member="SIAD_PARAMETROS_GENERALES" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_PARAMETROS_GENERALES" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PEDIDOS" Member="SIAD_PEDIDOS" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_PEDIDOS" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_PORCIONES" Member="SIAD_PORCIONES" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_PORCIONES" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_ROLES" Member="SIAD_ROLES" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_ROLES" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_TIPO_MENU" Member="SIAD_TIPO_MENU" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_TIPO_MENU" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_USUARIOS" Member="SIAD_USUARIOS" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_USUARIOS" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_ROLES" Member="SIAD_ROLES">
+    <Type Name="SIAD_ROLES">
+      <Column Name="PK_ROL" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ROL_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ROL_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ROL_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ROL_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ROL_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ROL_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ROL_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_ROLES_SIAD_PAGINAS_POR_ROL" Member="SIAD_PAGINAS_POR_ROL" ThisKey="PK_ROL,PK_RESTAURANTE" OtherKey="PK_ROL,PK_RESTAURANTE" Type="SIAD_PAGINAS_POR_ROL" />
+      <Association Name="SIAD_ROLES_SIAD_USUARIOS" Member="SIAD_USUARIOS" ThisKey="PK_ROL,PK_RESTAURANTE" OtherKey="PK_ROL,PK_RESTAURANTE" Type="SIAD_USUARIOS" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_ROLES" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_TIPO_MENU" Member="SIAD_TIPO_MENU">
+    <Type Name="SIAD_TIPO_MENU">
+      <Column Name="PK_TIPO_MENU" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_CODIGO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_TIPO_MENU" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SIAD_USUARIOS" Member="SIAD_USUARIOS">
+    <Type Name="SIAD_USUARIOS">
+      <Column Name="PK_USUARIO" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PK_ROL" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="USU_PRIMER_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_SEGUNDO_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_PRIMER_APELLIDO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_SEGUNDO_APELLIDO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_USUARIO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_CONTRASEÑA" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="USU_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Association Name="SIAD_RESTAURANTE_SIAD_USUARIOS" Member="SIAD_RESTAURANTE" ThisKey="PK_RESTAURANTE" OtherKey="PK_RESTAURANTE" Type="SIAD_RESTAURANTE" IsForeignKey="true" />
+      <Association Name="SIAD_ROLES_SIAD_USUARIOS" Member="SIAD_ROLES" ThisKey="PK_ROL,PK_RESTAURANTE" OtherKey="PK_ROL,PK_RESTAURANTE" Type="SIAD_ROLES" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_ELIMINAR_MENU" Method="SP_ELIMINAR_MENU">
+    <Parameter Name="PK_MENU" Parameter="pK_MENU" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_ELIMINAR_MESA" Method="SP_ELIMINAR_MESA">
+    <Parameter Name="PK_MESA" Parameter="pK_MESA" Type="System.Int16" DbType="SmallInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_LISTAR_MENU" Method="SP_LISTAR_MENU">
+    <Parameter Name="PK_TIPO_MENU" Parameter="pK_TIPO_MENU" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MEN_NOMBRE" Parameter="mEN_NOMBRE" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="SP_LISTAR_MENUResult">
+      <Column Name="PK_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_PORCION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_TIPO_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CODIGO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_IMAGEN" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="MEN_PRECIO" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_MENU_POR_PK" Method="SP_LISTAR_MENU_POR_PK">
+    <Parameter Name="PK_MENU" Parameter="pK_MENU" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_LISTAR_MENU_POR_PKResult">
+      <Column Name="PK_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_PORCION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_TIPO_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CODIGO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_IMAGEN" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="MEN_PRECIO" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_MENU_POR_RESTAURANTE" Method="SP_LISTAR_MENU_POR_RESTAURANTE">
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_LISTAR_MENU_POR_RESTAURANTEResult">
+      <Column Name="PK_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_PORCION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_TIPO_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CODIGO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_IMAGEN" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="MEN_PRECIO" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PK_PORCION1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="POR_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="POR_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PK_TIPO_MENU1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE2" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_CODIGO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_MENU_POR_TIPO_MENU" Method="SP_LISTAR_MENU_POR_TIPO_MENU">
+    <Parameter Name="PK_TIPO_MENU" Parameter="pK_TIPO_MENU" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_LISTAR_MENU_POR_TIPO_MENUResult">
+      <Column Name="PK_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_PORCION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_TIPO_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CODIGO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_IMAGEN" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="MEN_PRECIO" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MEN_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_MESAS" Method="SP_LISTAR_MESAS">
+    <ElementType Name="SP_LISTAR_MESASResult">
+      <Column Name="PK_MESA" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MES_NUMERO" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MES_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_ESTADO_ACTUAL" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="MES_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="MES_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_PAGINAS_POR_TIPO" Method="SP_LISTAR_PAGINAS_POR_TIPO">
+    <Parameter Name="PAG_TIPO" Parameter="pAG_TIPO" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PK_ROL" Parameter="pK_ROL" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_LISTAR_PAGINAS_POR_TIPOResult">
+      <Column Name="PPR_INGRESO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PPR_MODIFICACION" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PPR_ELIMINACION" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PPR_CREACION" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PK_PAGINA" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_RUTA" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_TIPO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_ICONO" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="PAG_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_PARAMETRO_GENERAL_POR_NOMBRE" Method="SP_LISTAR_PARAMETRO_GENERAL_POR_NOMBRE">
+    <Parameter Name="PGE_NOMBRE" Parameter="pGE_NOMBRE" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="SP_LISTAR_PARAMETRO_GENERAL_POR_NOMBREResult">
+      <Column Name="PK_PARAMETRO_GENERAL" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="PGE_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_PORCIONES" Method="SP_LISTAR_PORCIONES">
+    <ElementType Name="SP_LISTAR_PORCIONESResult">
+      <Column Name="PK_PORCION" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="POR_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="POR_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="POR_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_RESTAURANTES" Method="SP_LISTAR_RESTAURANTES">
+    <ElementType Name="SP_LISTAR_RESTAURANTESResult">
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RES_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_LOGO" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" />
+      <Column Name="RES_TELEFONO_UNO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_TELEFONO_DOS" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CEDULA_JURIDICA" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CORREO_ELECTRONICO" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_DIRECCION" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CODIGO_MENU" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="RES_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="RES_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_LISTAR_TIPOS_MENU" Method="SP_LISTAR_TIPOS_MENU">
+    <ElementType Name="SP_LISTAR_TIPOS_MENUResult">
+      <Column Name="PK_TIPO_MENU" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_DESCRIPCION" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_CODIGO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_ESTADO" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_CREADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_FECHA_CREACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_MODIFICADO_POR" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TIM_FECHA_MODIFICACION" Type="System.DateTime" DbType="SmallDateTime NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_MODIFCAR_CODIGO_MENU_RESTAURANTE" Method="SP_MODIFCAR_CODIGO_MENU_RESTAURANTE">
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="RES_CODIGO_MENU" Parameter="rES_CODIGO_MENU" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="RES_MODIFICADO_POR" Parameter="rES_MODIFICADO_POR" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_MODIFICAR_MENU" Method="SP_MODIFICAR_MENU">
+    <Parameter Name="PK_MENU" Parameter="pK_MENU" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PK_PORCION" Parameter="pK_PORCION" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MEN_NOMBRE" Parameter="mEN_NOMBRE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MEN_IMAGEN" Parameter="mEN_IMAGEN" Type="System.Data.Linq.Binary" DbType="Image" />
+    <Parameter Name="MEN_PRECIO" Parameter="mEN_PRECIO" Type="System.Decimal" DbType="Decimal(8,2)" />
+    <Parameter Name="MEN_PRECIO_IVI" Parameter="mEN_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2)" />
+    <Parameter Name="MEN_DESCUENTO" Parameter="mEN_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2)" />
+    <Parameter Name="MEN_ESTADO" Parameter="mEN_ESTADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="MEN_MODIFICADO_POR" Parameter="mEN_MODIFICADO_POR" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_MODIFICAR_MESA" Method="SP_MODIFICAR_MESA">
+    <Parameter Name="PK_MESA" Parameter="pK_MESA" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MES_NUMERO" Parameter="mES_NUMERO" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MES_DESCRIPCION" Parameter="mES_DESCRIPCION" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MES_ESTADO_ACTUAL" Parameter="mES_ESTADO_ACTUAL" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MES_ESTADO" Parameter="mES_ESTADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="MES_MODIFICADO_POR" Parameter="mES_MODIFICADO_POR" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_REGISTRAR_MENU" Method="SP_REGISTRAR_MENU">
+    <Parameter Name="PK_PORCION" Parameter="pK_PORCION" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PK_TIPO_MENU" Parameter="pK_TIPO_MENU" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MEN_CODIGO" Parameter="mEN_CODIGO" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="MEN_NOMBRE" Parameter="mEN_NOMBRE" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MEN_IMAGEN" Parameter="mEN_IMAGEN" Type="System.Data.Linq.Binary" DbType="Image" />
+    <Parameter Name="MEN_PRECIO" Parameter="mEN_PRECIO" Type="System.Decimal" DbType="Decimal(8,2)" />
+    <Parameter Name="MEN_PRECIO_IVI" Parameter="mEN_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2)" />
+    <Parameter Name="MEN_DESCUENTO" Parameter="mEN_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2)" />
+    <Parameter Name="MEN_ESTADO" Parameter="mEN_ESTADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="MEN_CREADO_POR" Parameter="mEN_CREADO_POR" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_REGISTRAR_MESA" Method="SP_REGISTRAR_MESA">
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MES_NUMERO" Parameter="mES_NUMERO" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MES_DESCRIPCION" Parameter="mES_DESCRIPCION" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MES_ESTADO_ACTUAL" Parameter="mES_ESTADO_ACTUAL" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MES_ESTADO" Parameter="mES_ESTADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="MES_CREADO_POR" Parameter="mES_CREADO_POR" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_TIPOS_MENU_POR_USUARIO" Method="SP_TIPOS_MENU_POR_USUARIO">
+    <Parameter Name="PK_ROL" Parameter="pK_ROL" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="SP_TIPOS_MENU_POR_USUARIOResult">
+      <Column Name="PAG_TIPO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_VERIFICAR_USUARIO" Method="SP_VERIFICAR_USUARIO">
+    <Parameter Name="USU_USUARIO" Parameter="uSU_USUARIO" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="USU_CONTRASEÑA" Parameter="uSU_CONTRASEÑA" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="SP_VERIFICAR_USUARIOResult">
+      <Column Name="PK_USUARIO" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_ROL" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PK_RESTAURANTE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="USU_PRIMER_NOMBRE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="USU_USUARIO" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_REGISTRAR_DETALLE_PEDIDO" Method="SP_REGISTRAR_DETALLE_PEDIDO">
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PK_PEDIDO" Parameter="pK_PEDIDO" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="PK_MENU" Parameter="pK_MENU" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="MEN_CODIGO" Parameter="mEN_CODIGO" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="DPE_CANTIDAD" Parameter="dPE_CANTIDAD" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="DPE_PRECIO" Parameter="dPE_PRECIO" Type="System.Decimal" DbType="Decimal(8,2)" />
+    <Parameter Name="DPE_PRECIO_IVI" Parameter="dPE_PRECIO_IVI" Type="System.Decimal" DbType="Decimal(8,2)" />
+    <Parameter Name="DPE_DESCUENTO" Parameter="dPE_DESCUENTO" Type="System.Decimal" DbType="Decimal(4,2)" />
+    <Parameter Name="DPE_ESTADO" Parameter="dPE_ESTADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="DPE_CREADO_POR" Parameter="dPE_CREADO_POR" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_REGISTRAR_PEDIDO" Method="SP_REGISTRAR_PEDIDO">
+    <Parameter Name="PK_MESA" Parameter="pK_MESA" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PK_RESTAURANTE" Parameter="pK_RESTAURANTE" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="PED_TOTAL" Parameter="pED_TOTAL" Type="System.Decimal" DbType="Decimal(15,2)" />
+    <Parameter Name="PED_ESTADO" Parameter="pED_ESTADO" Type="System.String" DbType="VarChar(1)" />
+    <Parameter Name="PED_CREADO_POR" Parameter="pED_CREADO_POR" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="SP_REGISTRAR_PEDIDOResult">
+      <Column Name="PEDIDO" Type="System.Decimal" DbType="Decimal(38,0)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

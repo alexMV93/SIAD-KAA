@@ -1,0 +1,66 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:local="clr-namespace:SIAD_KAA.Controles.Personalizados" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" mc:Ignorable="d">
+
+
+  <Style TargetType="{x:Type local:ccOpcionMenu}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ccOpcionMenu}">
+                    <Grid Height="30" Width="150">
+                		<VisualStateManager.VisualStateGroups>
+                			<VisualStateGroup x:Name="CommonStates">
+                				<VisualState x:Name="Normal"/>
+                				<VisualState x:Name="MouseOver">
+                					<Storyboard>
+                						<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.FontSize)" Storyboard.TargetName="txtNombre">
+                							<EasingDoubleKeyFrame KeyTime="0" Value="17.333"/>
+                						</DoubleAnimationUsingKeyFrames>
+                					</Storyboard>
+                				</VisualState>
+                				<VisualState x:Name="Pressed"/>
+                				<VisualState x:Name="Disabled"/>
+                			</VisualStateGroup>
+                		</VisualStateManager.VisualStateGroups>
+                		<Image x:Name="imgOpcion" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="30"/>
+                		<TextBlock x:Name="txtNombre" TextWrapping="Wrap" VerticalAlignment="Stretch" Margin="33,0,0,5" Width="117" Height="25" FontSize="16"/>
+                		<Grid x:Name="grdBarra" Height="5" VerticalAlignment="Bottom" Width="150"/>
+                	</Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:ccMenu}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ccMenu}">
+                    <materialDesign:Card Width="207.194" Margin="8 2 6 8" Height="149.329">
+                        <Grid VerticalAlignment="Stretch" Margin="0,0,-4,0">
+                            <Image x:Name="imgProducto" Source="{Binding MEN_IMAGEN, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" Stretch="Fill" Margin="20,4.465,20,72" />
+                            <TextBlock x:Name="txtNombre" TextWrapping="Wrap" Text="{Binding MEN_NOMBRE, Mode=TwoWay}" VerticalAlignment="Bottom" FontFamily="Segoe UI" FontSize="16" TextAlignment="Center" Height="42.72" Margin="10,0,10,28.28" Foreground="Black"/>
+                            <TextBlock x:Name="txtPrecio" TextWrapping="Wrap" Text="{Binding MEN_PRECIO_IVI_STRING,  Mode=TwoWay, NotifyOnValidationError=true, ValidatesOnExceptions=true}" VerticalAlignment="Bottom" Foreground="White" Background="Green" FontFamily="Segoe UI" FontSize="16" TextAlignment="Center" Margin="5,0,10,5" FontWeight="Bold"/>
+                        </Grid>
+                    </materialDesign:Card>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type local:ccMesa}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ccMesa}">
+                    <materialDesign:Card Width="207.194" Margin="8 2 6 8" Height="149.329">
+                        <Grid VerticalAlignment="Stretch" Margin="0,0,-4,0">
+                            <Image x:Name="imgMesa" Stretch="Fill" Margin="20,4.465,20,36.28" Source="{Binding MES_IMAGEN, RelativeSource={RelativeSource TemplatedParent}}"   />
+                            <TextBlock x:Name="txtEstadoActual" TextWrapping="Wrap" Text="{Binding MES_ESTADO_ACTUAL, Mode=TwoWay}" VerticalAlignment="Bottom" Foreground="White" Background="{TemplateBinding Background}" FontFamily="Segoe UI" FontSize="16" TextAlignment="Center" Margin="5,0,10,5" FontWeight="Bold" Height="26.28"/>
+                        </Grid>
+                    </materialDesign:Card>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

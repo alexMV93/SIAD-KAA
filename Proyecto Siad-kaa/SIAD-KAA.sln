@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIAD-KAA", "SIAD-KAA\SIAD-KAA.csproj", "{14505403-EA98-48FD-9FB6-FC83783DF081}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIAD-KAA_BussinessLogic", "SIAD-KAA_BussinessLogic\SIAD-KAA_BussinessLogic.csproj", "{5C149F98-67C6-4929-BF60-7E0E460F57CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIAD-KAA_Controller", "SIAD-KAA_Controller\SIAD-KAA_Controller.csproj", "{86B79DAC-5265-4DC1-8FA7-A592B63AED4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SIAD-KAA_Entities", "SIAD-KAA_Entities\SIAD-KAA_Entities.csproj", "{143B0B7B-A45E-4255-B060-FAE4E107CEBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14505403-EA98-48FD-9FB6-FC83783DF081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14505403-EA98-48FD-9FB6-FC83783DF081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14505403-EA98-48FD-9FB6-FC83783DF081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14505403-EA98-48FD-9FB6-FC83783DF081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C149F98-67C6-4929-BF60-7E0E460F57CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C149F98-67C6-4929-BF60-7E0E460F57CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C149F98-67C6-4929-BF60-7E0E460F57CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C149F98-67C6-4929-BF60-7E0E460F57CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B79DAC-5265-4DC1-8FA7-A592B63AED4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B79DAC-5265-4DC1-8FA7-A592B63AED4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B79DAC-5265-4DC1-8FA7-A592B63AED4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B79DAC-5265-4DC1-8FA7-A592B63AED4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143B0B7B-A45E-4255-B060-FAE4E107CEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143B0B7B-A45E-4255-B060-FAE4E107CEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143B0B7B-A45E-4255-B060-FAE4E107CEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143B0B7B-A45E-4255-B060-FAE4E107CEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
